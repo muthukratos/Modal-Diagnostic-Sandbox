@@ -22,17 +22,24 @@ pip install -r requirements.txt
 ```
 
 ### 3. Start Backend Server
-```bash
-uvicorn main:app --reload
-```
-Server runs at: `http://localhost:8000`
+Open a terminal in the root folder and activate the virtual environment:
+* **Command Prompt (CMD)**:
+  ```cmd
+  venv\Scripts\activate
+  uvicorn main:app --reload
+  ```
+* **PowerShell**:
+  ```powershell
+  .\venv\Scripts\Activate.ps1
+  uvicorn main:app --reload
+  ```
+Server runs at: `http://localhost:8000`  
 Interactive API docs: `http://localhost:8000/docs`
 
 ### 4. Start Frontend
-Open a new terminal and run:
+Open a new terminal in the root folder and run:
 ```bash
 cd frontend
-npm install
 npm run dev
 ```
 **Note:** If `npm run dev` fails with a security error in PowerShell, use Command Prompt (cmd) or run:
